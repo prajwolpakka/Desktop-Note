@@ -43,7 +43,8 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
 String privacyPolicy = '''Simply Elegant built the Desktop Note app as an Ad Supported app. This SERVICE is provided by Simply Elegant at no cost and is intended for use as is.
 
 We don't store your personal data. 
-We physically can't. We don't even have a server. We don't even have a server database.
+
+We physically can't. We don't even have a server.
 
  Third party service providers
 
