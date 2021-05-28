@@ -1,4 +1,4 @@
-package com.example.desktop_note
+package com.simplyelegant.desktop_note
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
