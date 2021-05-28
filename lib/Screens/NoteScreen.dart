@@ -60,7 +60,8 @@ class _NoteScreenState extends State<NoteScreen> {
 
   _updateWidget() async {
     try {
-      return HomeWidget.updateWidget(name: 'HomeWidget', androidName: 'HomeWidget');
+      HomeWidget.updateWidget(name: 'LightWidget');
+      HomeWidget.updateWidget(name: 'DarkWidget');
     } on PlatformException catch (exception) {
       debugPrint('Error Updating Widget. $exception');
     }
