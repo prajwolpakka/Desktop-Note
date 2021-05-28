@@ -54,7 +54,9 @@ class _NoteScreenState extends State<NoteScreen> {
 
   _sendData() async {
     try {
-      return Future.wait([HomeWidget.saveWidgetData<String>('note', _textController.text)]);
+      String data = _textController.text;
+      if (data.length == 0) data = '1. Create a Note !';
+      return Future.wait([HomeWidget.saveWidgetData<String>('note', data)]);
     } on PlatformException catch (exception) {
       debugPrint('Error Sending Data. $exception');
     }
