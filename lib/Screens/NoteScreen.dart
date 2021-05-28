@@ -7,6 +7,8 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:provider/provider.dart';
 
+import '../PrivacyPolicyScreen.dart';
+
 class NoteScreen extends StatefulWidget {
   @override
   _NoteScreenState createState() => _NoteScreenState();
@@ -142,18 +144,18 @@ class _NoteScreenState extends State<NoteScreen> {
                 );
               },
             ),
-            // IconButton(
-            //   visualDensity: VisualDensity.compact,
-            //   icon: Icon(
-            //     Icons.policy,
-            //     color: Provider.of<ThemeProvider>(context, listen: false).darkTheme ? Colors.grey[200] : Colors.black,
-            //   ),
-            //   onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyPolicyScreen())),
-            // ),
             IconButton(
               visualDensity: VisualDensity.compact,
               icon: Icon(
-                Icons.nightlight_round,
+                Icons.policy,
+                color: Provider.of<ThemeProvider>(context, listen: false).darkTheme ? Colors.grey[200] : Colors.black,
+              ),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyPolicyScreen())),
+            ),
+            IconButton(
+              visualDensity: VisualDensity.compact,
+              icon: Icon(
+                Icons.brightness_4,
                 color: Provider.of<ThemeProvider>(context, listen: false).darkTheme ? Colors.grey[200] : Colors.black,
               ),
               onPressed: () => Provider.of<ThemeProvider>(context, listen: false).changeTheme(),
