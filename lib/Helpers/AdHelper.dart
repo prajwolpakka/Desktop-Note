@@ -1,5 +1,5 @@
 class AdHelper {
   static String get rewardedAdUnitId {
-    return "ca-app-pub-3940256099942544/5224354917";
+    return "ca-app-pub-4359440513763456/6477418794";
   }
 }
