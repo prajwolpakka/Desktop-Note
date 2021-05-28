@@ -1,12 +1,11 @@
+import 'package:desktop_note/Helpers/AdHelper.dart';
+import 'package:desktop_note/Providers/CreditProvider.dart';
+import 'package:desktop_note/Providers/ThemeProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:provider/provider.dart';
-
-import 'AdHelper.dart';
-import 'ThemeProvider.dart';
-import 'CreditProvider.dart';
 
 class NoteScreen extends StatefulWidget {
   @override

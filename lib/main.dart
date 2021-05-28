@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
-import 'NoteScreen.dart';
-import 'ThemeProvider.dart';
-import 'CreditProvider.dart';
+import 'Providers/CreditProvider.dart';
+import 'Providers/ThemeProvider.dart';
+import 'Screens/NoteScreen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
