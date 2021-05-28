@@ -185,7 +185,7 @@ class _NoteScreenState extends State<NoteScreen> {
                 children: [
                   TextButton(
                     onPressed: () async {
-                      if (Provider.of<CreditProvider>(context, listen: false).credit > 1) {
+                      if (Provider.of<CreditProvider>(context, listen: false).credit > 0) {
                         _sendAndUpdate();
                         todoFocusNode.unfocus();
                         Provider.of<CreditProvider>(context, listen: false).decreaseCredit();
