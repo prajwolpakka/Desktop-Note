@@ -22,7 +22,15 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
             Expanded(
               child: Container(
                 padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                child: ScrollConfiguration(behavior: ScrollBehavior(), child: ListView(children: [SizedBox(height: 10), Text(privacyPolicy)])),
+                child: NotificationListener<OverscrollIndicatorNotification>(
+                  onNotification: (OverscrollIndicatorNotification overscroll) {
+                    overscroll.disallowGlow();
+                    return false;
+                  },
+                  child: ListView(
+                    children: [SizedBox(height: 10), Text(privacyPolicy)],
+                  ),
+                ),
               ),
             ),
           ],
