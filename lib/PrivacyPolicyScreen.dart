@@ -22,7 +22,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
             Expanded(
               child: Container(
                 padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                child: ScrollConfiguration(behavior: ScrollBehavior(), child: ListView(children: [Text(privacyPolicy)])),
+                child: ScrollConfiguration(behavior: ScrollBehavior(), child: ListView(children: [SizedBox(height: 10), Text(privacyPolicy)])),
               ),
             ),
           ],
@@ -34,7 +34,8 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
 
 String privacyPolicy = '''Simply Elegant built the Desktop Note app as an Ad Supported app. This SERVICE is provided by Simply Elegant at no cost and is intended for use as is.
 
-We don't store your personal data.
+We don't store your personal data. 
+We physically can't. We don't even have a server. We don't even have a server database.
 
  Third party service providers
 
