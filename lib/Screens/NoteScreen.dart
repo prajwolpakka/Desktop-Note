@@ -81,7 +81,7 @@ class _NoteScreenState extends State<NoteScreen> {
   _loadData() async {
     try {
       return Future.wait([
-        HomeWidget.getWidgetData<String>('note', defaultValue: '1. Create a Note !').then((value) {
+        HomeWidget.getWidgetData<String>('note', defaultValue: 'Add Widget !').then((value) {
           if (value != null) {
             _textController.text = value;
             _textController.selection = TextSelection.fromPosition(TextPosition(offset: _textController.text.length));

@@ -28,7 +28,7 @@ class DarkWidget : HomeWidgetProvider() {
             val views = RemoteViews(context.packageName, R.layout.dark_layout).apply {
                 //Open App on Widget Click
                 setOnClickPendingIntent(R.id.widget_container,PendingIntent.getActivity(context, 0, Intent(context, MainActivity::class.java), 0))
-                setTextViewText(R.id.widget_message, widgetData.getString("note", null)?: "1. Create a Note !")
+                setTextViewText(R.id.widget_message, widgetData.getString("note", null)?: "Add Widget !")
             }
             appWidgetManager.updateAppWidget(widgetId, views)
         }
