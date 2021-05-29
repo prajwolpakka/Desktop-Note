@@ -7,7 +7,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:provider/provider.dart';
 
-import '../PrivacyPolicyScreen.dart';
+import 'PrivacyPolicyScreen.dart';
 
 class NoteScreen extends StatefulWidget {
   @override
