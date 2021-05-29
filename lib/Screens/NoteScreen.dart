@@ -33,8 +33,15 @@ class _NoteScreenState extends State<NoteScreen> {
         },
         onAdFailedToLoad: (ad, err) {
           Navigator.pop(context);
+          String message;
+          if (err.code == 3) {
+            message = 'No Added Found. So just enjoy the credit.';
+            Provider.of<CreditProvider>(context, listen: false).resetCredit();
+          } else {
+            message = 'Ad Loading Failed. Try Again Later';
+          }
           ScaffoldMessenger.of(context).removeCurrentSnackBar();
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Ad Loading Failed. Try Again Later'), duration: Duration(seconds: 1)));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
           setState(() {});
           ad.dispose();
         },
